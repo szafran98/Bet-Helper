@@ -21,7 +21,6 @@ for url in urlList:
         bazaLinkow.append(wycietyLink[1:-1] + "wyniki/")
 
 ostatnieSpotkania = {}
-driver = webdriver.Chrome(ChromeDriverManager().install())
 for link in bazaLinkow:
     driver.get("https://www.livescore.in" + link)
     time.sleep(1)
